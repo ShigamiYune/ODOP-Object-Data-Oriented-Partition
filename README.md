@@ -22,6 +22,10 @@ ODOP là 1 mô hình kết hợp giữa DOD và ECS đồng thời giữ tính m
 
 ``` c++
 
-
-
+class IsRun : public Component {
+public:
+  inline void Update(float dt) {
+    std::cout << "run" << std::endl;
+  }
+};
 ```
